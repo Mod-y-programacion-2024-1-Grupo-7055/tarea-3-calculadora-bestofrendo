@@ -1,6 +1,6 @@
 /**
- * Clase que nos modelará a los nodos que tienen un valor aritmético.
- */
+* Clase que nos modelará a los nodos que tienen un valor aritmético.
+*/
 public class NodoValor implements CompositeEA {
 
     double valor;
@@ -30,3 +30,4 @@ public class NodoValor implements CompositeEA {
     }
 
 }
+

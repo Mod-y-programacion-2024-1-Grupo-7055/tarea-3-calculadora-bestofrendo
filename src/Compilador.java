@@ -20,7 +20,7 @@ public class Compilador {
      */
     public StringTokenizer analisisLexico(String cadena) {
         cadena = cadena.replace(" ", "");
-        StringTokenizer tokenizer = new StringTokenizer(cadena, "()\\+\\*\\-\\/", true);
+        StringTokenizer tokenizer = new StringTokenizer(cadena, "()\\+\\*\\-\\/\\s\\c\\t\\r", true);
         return tokenizer;
     }
 
@@ -83,7 +83,7 @@ public class Compilador {
             Stack<CompositeEA> salida, NodoOperador no) throws ErrorDeSintaxisException {
         while (!operadores.empty()) {
             NodoOperador top = operadores.pop();
-            if ((top.getPrecedence() <= no.getPrecedence() || (top instanceof NodoParentesis))
+            if ((top.getPrecedence() < no.getPrecedence() || (top instanceof NodoParentesis))
                     && top.getPrecedence() != 3) {
                 operadores.push(top);
                 break;
