@@ -102,9 +102,9 @@ public abstract class NodoOperador implements CompositeEA{
      * @return Un nodo concreto, dependiendo del operador <code>s</code>
      * @throws ErrorDeSintaxisException En caso de recibir caracteres extraños.
      */
-    public static NodoOperador factoryMethodOperadorNuevo(String s,
+    public static NodoOperador factoryMethodOperadorNuevo(String st,
             boolean anteriorEsOperador) throws ErrorDeSintaxisException{
-        switch (s) {
+        switch (st) {
                 case "+":
                     return new NodoSuma(null,null);
                 case "-":
@@ -116,11 +116,17 @@ public abstract class NodoOperador implements CompositeEA{
                 case "/":
                     return new NodoDivision(null,null);
                 case "s":
-                    return new NodoSeno(null,null);
+                    NodoOperador os = new NodoSeno(null,null);
+                    os.precedence=anteriorEsOperador? 4:0;
+                    return os;
                 case "c":
-                    return new NodoCoseno(null, null);
+                    NodoOperador oc = new NodoCoseno(null,null);
+                    oc.precedence=anteriorEsOperador? 4:0;
+                    return oc;
                 case "t":
-                    return new NodoTangente(null, null);
+                    NodoOperador ot = new NodoSeno(null,null);
+                    ot.precedence=anteriorEsOperador? 4:0;
+                    return ot;
                 case "r":
                     return new NodoRaizCuadrada(null, null);
                 case "(":
