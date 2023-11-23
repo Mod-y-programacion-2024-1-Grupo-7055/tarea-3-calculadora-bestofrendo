@@ -8,9 +8,11 @@
 
 ## Descripción.
 
-Implementacion  de una calculadora para expresiones aritmeticas sencillas como: suma, resta, multiplicacion, division, seno, coseno, tangente y raiz.
+Implementar una calculadora para expresiones aritmeticas sencillas como: suma, resta, multiplicacion, division, seno, coseno, tangente y raiz.
 
 ## Capturas de Pantalla.
+
+Imagen de como se debe de ver la calcualdora con la interfaz.
 
 ![Captura de pantalla de la calculadora con interfaz grafica.](src/img/imagenCal.png)
 
@@ -26,9 +28,21 @@ git clone https://github.com/Mod-y-programacion-2024-1-Grupo-7055/tarea-3-calcul
 ```bash
 javac *.java
 ```
-3.- Ejecuta el main.
+3.- Ejecuta el main para utilizar la calculadora.
 ```bash
 java CalculadoraGrafica
 ```
+
+### Tecnologías Utilizadas
+
+Lenguaje de programacion: Java
+Modelos de programacion utilizados: Composite, Factory Methode.
+
+```markdown
+## Tecnologías Utilizadas
+
+- Swing (Para implementar la interfaz grafica).
+
+
 
 
