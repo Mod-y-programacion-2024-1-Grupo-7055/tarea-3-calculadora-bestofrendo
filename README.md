@@ -36,6 +36,7 @@ java CalculadoraGrafica
 ### Tecnologías Utilizadas
 
 Lenguaje de programacion: Java
+
 Modelos de programacion utilizados: Composite, Factory Methode.
 
 ```markdown
