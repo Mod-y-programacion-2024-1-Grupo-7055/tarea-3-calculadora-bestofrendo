@@ -1,13 +1,34 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/mWHhzJDI)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12889900&assignment_repo_type=AssignmentRepo)
-# Tarea-3-Calculadora
-Este repositorio contiene el código base para la tarea 3.
+# Tarea03.
+ 
+<br> 
+ 
+|Integrantes del equipo                         | 
+|-----------------------------------------------| 
+|Brandon Urbina                     Angel Castro|
 
-{-//Elimina estas líneas de código en tu commit final
-La entrega de esta tarea es en equpos de a lo más dos integrantes.
+## Descripción.
 
-Modifica este archivo para que cumpla los lineamientos de entraga de tareas del curso.
+Implementacion  de una calculadora para expresiones aritmeticas sencillas como: suma, resta, multiplicacion, division, seno, coseno, tangente y raiz.
 
-Asegurate de que este documento especifique los cambios al repositorio. Es decir qué archivos agregaste y cuáles modificaste.
-//Elimina estas lineas de código en tu commit final
--}
+## Capturas de Pantalla.
+
+![Captura de pantalla de la calculadora con interfaz grafica.](src/img/imagenCal.png)
+
+## Como compilar y ejecutar.
+
+Instrucciones paso a paso sobre cómo compilar y ejecutar la calculadora.
+
+1.- Clona el repo con la url: https://github.com/Mod-y-programacion-2024-1-Grupo-7055/tarea-3-calculadora-bestofrendo.git
+```bash
+git clone https://github.com/Mod-y-programacion-2024-1-Grupo-7055/tarea-3-calculadora-bestofrendo.git
+```
+2.- Compila todo los .java
+```bash
+javac *.java
+```
+3.- Ejecuta el main.
+```bash
+java CalculadoraGrafica
+```
+
+
