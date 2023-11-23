@@ -16,9 +16,6 @@ public class NodoSeno extends NodoOperador {
      */
     @Override
     public double evalua() {
-        if (izq==null){
-            return Math.sin(der.evalua());
-        }
         return Math.sin(der.evalua());
     }
   
