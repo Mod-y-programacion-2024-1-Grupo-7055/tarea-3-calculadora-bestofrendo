@@ -116,13 +116,21 @@ public abstract class NodoOperador implements CompositeEA{
                 case "/":
                     return new NodoDivision(null,null);
                 case "s":
-                    return new NodoSeno(null,null);
+                    NodoOperador os = new NodoSeno(null,null);
+                    os.precedence=anteriorEsOperador? 4:0;
+                    return os;
                 case "c":
-                    return new NodoCoseno(null, null);
+                    NodoOperador oc = new NodoCoseno(null,null);
+                    oc.precedence=anteriorEsOperador? 4:0;
+                    return oc;
                 case "t":
-                    return new NodoTangente(null, null);
+                    NodoOperador ot = new NodoTangente(null,null);
+                    ot.precedence=anteriorEsOperador? 4:0;
+                    return ot;
                 case "r":
-                    return new NodoRaizCuadrada(null, null);
+                    NodoOperador or = new NodoRaizCuadrada(null,null);
+                    or.precedence=anteriorEsOperador? 4:0;
+                    return or;
                 case "(":
                     return new NodoParentesis();
                 default:

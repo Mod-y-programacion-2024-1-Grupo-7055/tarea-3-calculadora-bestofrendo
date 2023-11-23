@@ -14,7 +14,7 @@ public class Calculadora {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws ErrorDeSintaxisException {
-        String cadena = "sin(2+6-(-2)+(5-3)*5)";
+        String cadena = "5+10+(2*8)";
         comp= new Compilador();
         StringTokenizer lexemas = comp.analisisLexico(cadena);
         CompositeEA nodo = comp.arbolDeAnalisisSintactico(lexemas);

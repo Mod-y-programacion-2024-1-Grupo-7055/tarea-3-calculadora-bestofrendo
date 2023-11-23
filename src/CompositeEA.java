@@ -28,6 +28,6 @@ public interface CompositeEA {
     @Override
     public String toString();
 
-    
+
 
 }
