@@ -12,7 +12,7 @@ public class NodoRaizCuadrada extends NodoOperador {
      * La evaluación del nodo, divide la evaluación de los hijos izquierdo y
      * derecho.
      *
-     * @return la tan del hijo izquierdo
+     * @return la raíz cuadrada del hijo derecho
      */
     @Override
     public double evalua() {
